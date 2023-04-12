@@ -32,16 +32,20 @@ body {
     max-width: 33rem;
     margin: 0 auto;
 }
-
-@media (min-width: 700px) {
-    :root {
-        --fs-heading: 5.6rem;
-    }
+@media (min-width: 700px){
+   
 
     .page {
         max-width: 117rem;
         padding: 0 5rem;
     }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 930px) {
+   
 
     main {
         grid-template-areas: "A B B"
@@ -112,6 +116,7 @@ main {
     object-fit: cover;
     border-radius: 6px;
     transition: all 200ms;
+    filter: brightness(0.5) saturate(1.5);
 
 }
 
