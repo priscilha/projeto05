@@ -11,11 +11,13 @@
     --bg-primary: hsl(var(--hue), 22%, 20%);
     --fc-primary: hsl(var(--hue), 0%, 100%);
     --fc-secondary: hsl(var(--hue), 50%, 80%);
+    --fs-secondary-dark: hsl(var(--hue), 100%, 11%, 1);
 
     font-size: 62.5%;
     --fs-body: 1.6rem;
-    --fs-heading: 4rem;
-    --fs-secondary-dark: hsl(var(--hue), 100%, 11%, 1);
+    --fs-heading: clamp(4rem, 1rem + 5vw, 5.6rem);
+    --fs-heading-sm: clamp(3rem, 0.5rem + 3vw, 4rem);
+ 
 
 
 
@@ -29,8 +31,9 @@ body {
 }
 
 .page {
-    max-width: 33rem;
+    max-width: clamp(33rem, 20rem + 20vw + 117rem);
     margin: 0 auto;
+    padding: 0 5rem;
 }
 @media (min-width: 700px){
    
@@ -131,7 +134,7 @@ main {
     bottom: 5.2rem;
     left: 2.8rem;
 
-    font-size: 4rem;
+    font-size: var(--fs-heading-sm);
     font-weight: 800;
 
     display: flex;
