@@ -1,7 +1,8 @@
-# projeto05
+# Responsividade CSS
 
 Página responsiva para mobile e desktop.
-</br>
+</br></br>
+Atividades trabalhadas:</br>
 :ballot_box_with_check:Variávies e cores em CSS, utilizando o valor HSL, deixando o projeto mais flexível para futuras alterações.
 </br>
 :ballot_box_with_check:Animações no CSS com propriedade animation , uso de @keyframes para definir as regras das animações.
